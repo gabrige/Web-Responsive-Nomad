@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Camperiza Tu Vida</title>
+</head>
+<body class="fondocontacto">
+    <header>
+
+        <div class="cabecera">
+
+            <!--icono vuelta a home-->
+            <a href="index.html" class="cabecera_logo"><img src="img/icon.png" alt="nomad"></a>
+
+            <!--menú ppal-->
+            <nav class="navegacion"> 
+                <ul class="cabecera_menu">
+                    <li><a href="Quienessomos.html">Quienes Somos</a></li>
+                    <li class="develop"><a>Areas de Actuación</a>
+                        <ul class="ul_second">
+                            <li><a href="Areasdeactuacion.html">Accesorios y equipamiento</a></li>
+                            <li><a href="Areasdeactuacion.html">Venta de kits</a></li>
+                            <li><a href="Areasdeactuacion.html">Consultoría de diseño</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="Areas">
+                <div class="AreaForm">
+                    <img src="" alt="">
+                    <section id="contacto" class="contacto">
+                    <h2>Contacta con nosotros</h2>
+                    <p> Ya estás más cerca de camperizar tu vida.</p>
+                    <p> Rellena este formulario y te ayudaremos lo antes posible.</p>
+                    <br>
+                    <form name="formContacto" action="mailto:camperizatuvida@gmail.com" method="post">
+                    <fieldset class="fieldset">
+                        <legend class="legend">Datos Personales:</legend>
+                        Apellidos: <input type="text" name="apellidos" id="" placeholder="Indica tus Apellidos">
+                        Nombre: <input type="text" name="nombre" id="" placeholder="Indica tu nombre">
+                        DNI: <input type="text" name="dni" id="" placeholder="Indica tu DNI"> <br>
+                        Mail: <input type="email" name="" id=""> 
+                        Teléfono: <input type="tel" name="" id="">
+                        <br>
+                        Nacido/a en: <input type="text" name="dni" id="">
+                        Fecha nacimiento (dd/mm/aaaa): <input type="date">
+                        <br>
+                        Sexo:
+                        <input type="radio" name="sexo" value="hombre" required>Hombre
+                        <input type="radio" name="sexo" value="mujer" required>Mujer
+                        <br>
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset">
+                      <legend class="legend">  Dirección Postal: </legend>
+                        Calle: <input type="text" name="calle" placeholder="Calle" required>
+                        Número: <input type="text" name="numero" placeholder="Número" required>
+                        Piso: <input type="text" name="piso" placeholder="Piso"> <br>
+                        Ciudad: <input type="text" name="ciudad" placeholder="Ciudad" required>
+                        Provincia:<input type="text" name="provincia" placeholder="Provincia" required> <br>
+                        Cod. Postal: <input type="text" name="codigo_postal" placeholder="Código Postal" required>
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset">
+                        <legend class="legend">Vehículo a camperizar:</legend>
+                        Marca: <input type="text" name="Marca" placeholder="Marca" required>
+                        <br>
+                        Modelo: <input type="text" name="Modelo" placeholder="Modelo" required>
+                        <br>
+                        Año: <input type="text" name="Año" placeholder="Año" required>
+                        <br>
+                        Matrícula: <input type="text" name="Matrícula" placeholder="Matrícula" required>
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset">
+                        <legend class="legend">Observaciones a tener en cuenta sobre el vehículo:</legend>
+                        <textarea name="comentarios" cols="30" rows="5"></textarea>
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset">
+                        <legend class="legend">Tipo de Camperización:</legend>
+                        <select name="Camperizacion">
+                            <option value="text">Sencilla</option>
+                            <option value="text">Completa</option>
+                            <option value="text">Premiun</option>
+                            <option value="text">Personalizada</option>
+                        </select>
+                    </fieldset class="fieldset">
+                    <br>
+                    <fieldset class="fieldset">
+                    <legend class="legend">Selecciona extras para tu vehículo:</legend>
+                                <input type="checkbox" name="Toldo">Toldo
+                                <br><input type="checkbox" name="Toldo electrónico">Toldo electrónico
+                                <br><input type="checkbox" name="Wi-Fi integrado" > Wi-Fi integrado
+                                <br><input type="checkbox" name="Equipo de sonido"> Equipo de sonido
+                                <br><input type="checkbox" name="Equipo de televisión"> Equipo de televisión
+                                <br><input type="checkbox" name="Nevera"> Nevera     
+                    </fieldset class="fieldset">
+                    <br>
+                    <fieldset class="fieldset">
+                        <legend class="legend">Selecciona el color que deseas para tu vehículo terminado:</legend>
+                        <input type="color">
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset">
+                    <legend class="legend"> Indica tu presupuesto estimado: </legend>
+                    <input type="number" name="numero" id="" value="1000" min="1000" max="100000" step="5">
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset">
+                        <legend class="legend">Añade imágenes de tu vehículo:</legend>
+                        <input type="file" name="documentación" accept=".jpg" multiple>
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset">
+                        <legend class="legend">Añade documentación adicional:</legend>
+                        <input type="file" name="documentación" accept=".jpg" multiple>
+                    </fieldset>
+                    <br>
+                    <legend class="legend">Por favor, acepta nuestros términos y condiciones:</legend> 
+                    <fieldset class="fieldset">
+                        <input type="radio" name="Terminos" value="Acepto" required> Acepto
+                        <br><input type="radio" name="Terminos" value="No acepto" required> No acepto
+                    </fieldset>
+                    <br>
+                    
+
+                </form>
+                <div class="area_botones">
+                    <input type="submit" value="Enviar" class="boton_neg">
+                    <input type="reset" value="Borrar" class="boton_neg">
+                    <div class="boton_neg">
+                        <a href="mailto:camperizatuvida@gmail.com">Mas información</a>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <section>
+    </section>
+    <footer>
+        <p>&copy;Nomad 2024</p>
+    </footer>
+    
+</body>
+</html>
